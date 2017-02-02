@@ -1,0 +1,106 @@
+$first-top-navbar-height: 50px;
+$side-bar-width: 220px;
+$side-bar-bgcolor: #333366;
+$side-bar-font-size: 16px;
+$side-bar-padding-left: 14px;
+$side-bar-padding-top: 12px;
+$side-bar-height: 100%;
+$hide-bar-font-size: 16px;
+$hide-bar-width: $hide-bar-font-size + 20;
+//$hide-bar-height: $hide-bar-font-size + ($side-bar-padding-top*2) + 100;
+$hide-bar-height: $hide-bar-font-size*5 +$side-bar-padding-top*2 +20;
+$navbar-hover-color: #F1F1F8;
+$icon-font-size: 20px;
+.self-nav{
+  padding-left: 0;
+  text-decoration: none;
+  list-style:none;
+}
+.side-bar{
+  display: block;
+//  display: none;
+  box-shadow: 1px 0 3px 3px rgba(0, 0, 0, 0.15);
+  height: $side-bar-height;
+  position: fixed;
+  overflow-y: scroll;
+  margin-left: 0;
+  margin-top: $first-top-navbar-height;
+  padding-bottom: 12px;
+  width: $side-bar-width;
+  background-color: $side-bar-bgcolor;
+
+  .side-title{
+    background-color: #1B1B36;
+    padding: $side-bar-padding-top $side-bar-padding-left;
+    color: white;
+    font-size: $side-bar-font-size +4;
+  }
+  .side-subtitle{
+    padding-top: 10px;
+    margin-left: $side-bar-padding-left;
+    margin-right: $side-bar-padding-left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  //  padding-left:$side-bar-padding-left;
+    color: white;
+    font-size: $side-bar-font-size +2;
+    border-bottom: 0.1px solid  #7B7BBC;
+  }
+  .side-detail{
+    a{
+      text-decoration: none;
+      color: #ABABAB;
+      font-size: $side-bar-font-size;
+      padding: 5px $side-bar-padding-left 5px $side-bar-padding-left;
+    }
+  }
+  .side-detail:hover{
+    background: white;
+  }
+  i{
+    padding-left: $side-bar-width/4;
+  }
+}
+.open-sidebar{
+//  transition: 0.5s;
+
+  border-radius: 3px;
+  position: fixed;
+  width: $hide-bar-width;
+  margin-top: $first-top-navbar-height+1;
+  height: $hide-bar-height;
+  background-color: #1B1B36;
+  box-shadow: 1px 0 3px 3px rgba(0, 0, 0, 0.15);
+  display: none;
+//  display: block;
+  i{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+  }
+  p{
+    color: white;
+    font-size: $hide-bar-font-size;
+    padding-left: ($hide-bar-width - $hide-bar-font-size)/2;
+    padding-top: 5px;
+  }
+}
+.icon-set{
+  font-size: $icon-font-size;
+  color: white; 
+}
+.icon-set:hover{
+  color:gray;
+}
+.side-bar{
+  i{
+    @extend .icon-set;
+  }
+} 
+.open-sidebar{
+  i{
+    @extend .icon-set;
+  }  
+}
