@@ -1,0 +1,101 @@
+/////base
+$whole-background-color: #F0F0F0;
+//$top-navbar-color: white;
+$navbar-height: 60px;
+$side-bar-bgcolor: #333366;
+$main-color-light: #6363B0;
+$main-color-heavy: #1B1B36;
+$divider-color: #E0E0E0;
+//v1 color
+$navbar-word-color: #2C2918;
+$top-navbar-color: rgba(255, 255, 255, 1);
+$button-color:  #344FA8;
+
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+ // overflow-x: hidden;
+}
+.all{
+  height: 100%;
+  width: 100%; 
+}
+.navbar-default {
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  background-color: rgba(255, 255, 255, 1);
+//  border: none;
+
+//  background-color: $top-navbar-color;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.12);
+
+}
+.top-navbar > #navbar-id{
+//  height: $navbar-height;
+}
+.navbar-default .navbar-brand{
+  //color: $side-bar-bgcolor;
+  //v1
+  color: $navbar-word-color;
+}
+.top-navbar{
+  width: 100%;
+  z-index: 999;
+  .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .navbar-brand:hover{
+    color: $navbar-word-color;
+    opacity: .7;
+  }
+}
+.navbar-toggle{
+  border: none;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: $top-navbar-color;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: gray;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 18px;
+  color:  #3C3C3C ;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  opacity: .7;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px){
+  .navbar-default .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .navbar-default .info-divider > li{
+    border-bottom: 1px solid  $divider-color;
+  }
+  .navbar-default .log-divider > li:not(:last-child){
+    border-bottom: 1px solid  $divider-color;
+  }
+
+}

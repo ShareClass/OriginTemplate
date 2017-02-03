@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>share-class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet" type="text/css" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body id="homePage" data-spy="scroll" data-target=".navbar">
+  <div class="all">
+    <div class="top-navbar">
+      <nav id="navbar-id" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> 
+            <a class="navbar-brand" href="index.html" id="title-id">ShareClass</a>
+          </div>
+          <div class="collapse navbar-collapse myNavbar">
+            <ul class="nav navbar-nav info-divider">
+              <li><a href="">搜尋課程</a></li>
+
+              <li><a href="">分享課程</a></li> 
+              <li><a href="">參加社群</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right log-divider">
+              <li><a href="">登入</a></li>
+              <li><a href="">註冊</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div><!--navbar-->
+    <!--carousel-->
+    <div id="myCarousel" class="carousel slide text-center bg-gray" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner text-center" role="listbox">
+        <div class="item active">
+          <img id="photo1" src="https://i.ytimg.com/vi/Csm2wnfRMuA/maxresdefault.jpg" alt="ad1" > 
+          <div class="carousel-caption">
+            <h1>課程資源</h1>
+            <h4>新增均一融入教學特輯,補救教學神手攻略,現場分享紀錄片</h4>
+            <a href="" class="btn carousel-button" role="button">搜尋課程</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="photo2" src="http://www.hercampus.com/sites/default/files/2010/05/06/Her%20Campus%20Studying%20Main%20_0.jpg" alt="ad1">
+          <div class="carousel-caption">
+            <h1>課程上傳</h1>
+            <h4>新增均一融入教學特輯,補救教學神手攻略,現場分享紀錄片</h4>
+            <a href="" class="btn carousel-button" role="button">分享課程</a>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img id="photo3" src="http://www.insightstudy.co.uk/images/study_work/insight-greenwich-school-study+work.jpg" alt="ad1"> 
+          <div class="carousel-caption">
+            <h1>社群參與</h1>
+            <h4>新增均一融入教學特輯,補救教學神手攻略,現場分享紀錄片</h4>
+            <a href="" class="btn carousel-button" role="button">參加社群</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="revise-left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <span class="sr-only"></span>
+      </a>
+      <a class="revise-right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <span class="sr-only"></span>
+      </a>
+    </div><!--end of carousel-->
+
+    <div class="to-top" id="to-top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+    <!--introduce-->
+    <div class="intro1 text-center">
+      <h3>課程介紹</h3>
+      <h5>這裡是課程介紹</h5>
+    </div>
+    <div class="intro2 text-center">
+      <h3>個人頁面介紹</h3>
+      <h5>這裡是個人頁面介紹</h5>
+    </div>    
+    <div class="intro3 text-center">
+      <h3>社群介紹</h3>
+      <h5>這裡是社群介紹</h5>
+    </div>
+    <!--footer-->
+    <footer class="text-center">
+      <div class="info">
+        <div class="col-sm-4  col-md-4">
+          <a href="">關於我們</a></li>
+        </div>
+        <div class="col-sm-4  col-md-4">
+          <a href="">常見問題</a>
+        </div>
+        <div class="col-sm-4  col-md-4">
+          <a href="">團隊成員</a>
+        </div>
+      </div>
+      <div class="contact">
+        <p>xxx email.com</p>
+        <p>ⓒ2017 ShareClass</p>
+      </div>
+    </footer>
+  </div><!--all class-->
+
+  <!-- javascript -->
+  <script src="index.js"></script> 
+
+</body>
+</html>
